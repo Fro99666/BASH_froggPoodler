@@ -6,9 +6,7 @@ based on Dan Varga works (from redhat) script.
 I made some change and now the Poodle vulnerability check is more clean for me...
 
 => Script call :
-
 bash poodle.sh {serverIP} {serverPort}
-
 info : serverIP and serverPort are optional
 
 => 20141017 - Frogg change from original:
