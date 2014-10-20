@@ -50,21 +50,24 @@ fi
 #create the returned code
 out="`echo x | timeout 5 openssl s_client -ssl3 -connect ${host}:${port} 2>/dev/null`"
 ret=$?
+
+echo -e "\n\e[1m\e[4mCVE-2014-3566 - Poodle vulnerability result :\e[0m"
+
 #create a switch statement on $ret, exploit depend on result code
 case "$ret" in
 0)
-	echo "VULNERABLE! SSLv3 detected.";
+	echo -e "\e[1m\e[97m\e[41mVULNERABLE! SSLv3 detected.\e[0m\n";
 ;;
 124)
-	echo "error: timeout connecting to host $host:$port";
+	echo -e "\e[33merror: timeout connecting to host $host:$port\e[0m\n";
 ;;
 1)
 	out=`echo $out | perl -pe 's|.*Cipher is (.*?) .*|$1|'`;
 	if [ "$out" == "0000" ] || [ "$out" == "(NONE)" ];then
-		echo "Not Vulnerable. We detected that this server does not support SSLv3";exit
+		echo -e "\e[32mNot Vulnerable. We detected that this server does not support SSLv3\e[0m\n";exit
 	fi	
 ;;
 *)
-	echo "warning: $ret isn't a valid code while connecting to host $host:$port";
+	echo -e "\e[33mwarning: $ret isn't a valid code while connecting to host $host:$port\e[0m\n";
 ;;
 esac
