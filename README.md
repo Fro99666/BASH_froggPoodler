@@ -11,6 +11,6 @@ bash poodle.sh {serverIP} {serverPort}
 info : serverIP and serverPort are optional
 
 * 20141017 - Frogg change from original:
-=> if script ip isnt set, set 127.0.0.1 as default ip
-=> change if and elseif for a switch
-=> added some comments
+ => if script ip isnt set, set 127.0.0.1 as default ip
+ => change if and elseif for a switch
+ => added some comments
