@@ -41,8 +41,7 @@
 host=$1
 port=$2
 # #If empty IP then set 127.0.0.1 as default
-if [ -z $host ]
-then
+if [ -z $host ];then
 host="127.0.0.1"
 fi
 if [ -z $port ];then
