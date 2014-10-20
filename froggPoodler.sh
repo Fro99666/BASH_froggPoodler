@@ -35,6 +35,7 @@
 # => if script ip isnt set, set 127.0.0.1 as default ip
 # => change if and else if for a switch
 # => added some comments
+# => added text color and formating
 #
 #
 #Sent variable (host & port)
