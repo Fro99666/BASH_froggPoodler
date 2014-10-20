@@ -17,3 +17,4 @@ I made some change and now the Poodle vulnerability check is more clean for me..
 * if script ip isnt set, set 127.0.0.1 as default ip
 * change if and elseif for a switch
 * added some comments
+* text color and formating
