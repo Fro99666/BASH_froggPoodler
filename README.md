@@ -1,6 +1,9 @@
 froggPoodler
 ============
 
+* Vulnerability POODLE
+* CVE-2014-3566
+
 this code is used to test Poodle vulnerability on SSL3 exploit,
 based on Dan Varga works (from redhat) script.
 I made some change and now the Poodle vulnerability check is more clean for me...
