@@ -18,3 +18,6 @@ I made some change and now the Poodle vulnerability check is more clean for me..
 * change if and elseif for a switch
 * added some comments
 * added text color and formating
+
+
+code to prevent ^M : sed -i 's/\r$//' {fileName}
