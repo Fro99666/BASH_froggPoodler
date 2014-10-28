@@ -1,5 +1,5 @@
-Poodle Checker
-==============
+froggPoodler
+============
 
 * Vulnerability POODLE
 * CVE-2014-3566
